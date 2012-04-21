@@ -7,3 +7,8 @@ group :development do
   gem "pry", :require => false
   gem "awesome_print", :require => false
 end
+
+group :development, :test do
+  gem "rspec-rails"
+  gem "capybara"
+end
