@@ -1,0 +1,16 @@
+default: &defaults
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  pool: 5
+  username: root
+  password:
+  host: localhost
+
+development:
+  <<: *defaults
+  database: htr1_hackerboard_development
+
+test:
+  <<: *defaults
+  database: htr1_hackerboard_test
